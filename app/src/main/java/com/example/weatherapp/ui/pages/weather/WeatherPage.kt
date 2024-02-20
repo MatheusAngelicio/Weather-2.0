@@ -31,8 +31,6 @@ fun WeatherRoute(
 ) {
     val state by viewModel.weatherInfoState.collectAsStateWithLifecycle()
     WeatherScreen(weatherModel = state.weatherModel)
-
-    
 }
 
 @Composable

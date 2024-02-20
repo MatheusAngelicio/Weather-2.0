@@ -25,7 +25,7 @@ class WeatherViewModel @Inject constructor(
 
     private fun getWeatherInfo() {
         viewModelScope.launch {
-            val weather = repository.getWeatherData(-19.912998f, -43.940933f)
+            val weather = repository.getWeatherData(-25.4284f, -49.2733f)
             _weatherInfoState.update {
                 it.copy(weatherModel = weather)
             }
